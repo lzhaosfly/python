@@ -19,7 +19,24 @@ class Human(object):
             raise ValueError("Age can't be negative")
 
 
+class Teacher(Human):
+    def __init__(self, first, last, age, class_name):
+        super().__init__(first, last, age)
+        self._class_name = class_name
+
+    @property
+    def first(self):
+        return self._first
+
+
 jane = Human("Jane", "Goodall", -9)
 print(jane.age)
-jane.age = -123
+jane.age = 123
 print(jane.age)
+
+lei = Teacher("lei", "zhao", 27, "test")
+print(lei.first)
+
+d = {lei: 1, jane: 2}
+print(lei)
+print(d[Teacher("lei", "zhao", 27, "test")])
