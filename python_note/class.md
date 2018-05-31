@@ -131,3 +131,14 @@ class Human:
 			return [copy(self) for i in range(other)]
 		return "CANT MULTIPLY!"
 ```
+
+## 7. abstract method
+
+```python
+from abc import abstractmethod, ABCMeta
+
+class Model(metaclass=ABCMeta):
+    @abstractmethod
+    def foo(self):
+        """This method should implement how to foo the model."""
+```
