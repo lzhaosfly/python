@@ -8,8 +8,3 @@ class Character:
 class NPC(Character):
     def speak(self):
         print("I heard there were monsters running around last night!")
-
-
-villager = NPC("Bob", 10, 12)
-villager.speak()
-print(villager.level)

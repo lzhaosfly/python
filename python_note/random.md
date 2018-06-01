@@ -19,3 +19,11 @@ print(randint(0, 9)) # give random int between 0 to 9 (includes 0 and 9)
 from random import random
 print(random()) # give random float btween 0 to 1
 ```
+
+## 3. random choice
+
+```python
+from random import choice
+msg = choice(('Hello there ', 'Go away ', 'I love you '))
+print(msg)
+```
