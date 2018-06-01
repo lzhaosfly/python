@@ -21,6 +21,7 @@ if 4 in a:
 `remove(element)` to remove **element** from array, if element not exist, then throw error
 `count(element)` will give you how many element shows in this array
 `slice(start:end:step)` same as js slice
+`index(x)` return the index of x
 
 `reverse()` same as js
 `sort()` same as js
