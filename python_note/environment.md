@@ -12,7 +12,8 @@ and install.
 some useful command:
 
 *   create env: `conda create -n yourenvname python=3.6`
-*   active env: `activate yourenvname`
+*   active env: `source activate yourenvname`
+*   install package: `conda/pip install packages`
 *   check virtual env: `conda info --envs`
 *   remove env: `conda remove --name myenv --all`
 *   export env: `conda env export > environment.yml`
