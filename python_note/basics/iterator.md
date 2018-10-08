@@ -2,8 +2,8 @@
 
 ## 1. ITERATORS? ITERABLES??
 
-*   Iterator - an object that can be iterated upon. An object which returns data, one element at a time when next() is called on it
-*   Iterable - An object which will return an Iterator when iter() is called on it.
+-   Iterator - an object that can be iterated upon. An object which returns data, one element at a time when next() is called on it
+-   Iterable - An object which will return an Iterator when iter() is called on it.
 
 ```python
 def my_for(iterable, func):
@@ -39,7 +39,7 @@ class Counter:
 			num = self.current
 			self.current += 1
 			return num
-		raise StopIterationß
+		raise StopIteration
 
 for x in Counter(50,70):
 	print(x)
