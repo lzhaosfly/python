@@ -1,6 +1,11 @@
 import unittest
 from NPC import NPC
 
+# a: int = "a"
+# not_declared_var
+
+'hi' + 1
+
 
 class NPCTests(unittest.TestCase):
     def setUp(self):

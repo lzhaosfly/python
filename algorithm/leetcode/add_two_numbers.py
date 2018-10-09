@@ -21,7 +21,7 @@ class AddTwoNumbers(object):
     This is AddTwoNumbers class
     """
 
-    def add_two_numbers(self, l1, l2):
+    def add_two_numbers(self, l1: ListNode, l2: ListNode):
         """
         add_two_numbers
 
