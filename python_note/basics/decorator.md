@@ -38,10 +38,10 @@ def my_decorator(val):
 
 ## 1. What's Decorator?
 
-*   Decorators are functions
-*   Decorators wrap other functions and enhance their behavior
-*   Decorators are examples of higher order functions
-*   Decorators have their own syntax, using "@" (syntactic sugar)
+-   Decorators are functions
+-   Decorators wrap other functions and enhance their behavior
+-   Decorators are examples of higher order functions
+-   Decorators have their own syntax, using "@" (syntactic sugar)
 
 ## 2. example
 
@@ -94,7 +94,7 @@ print(order(side="burger", main="fries"))
 
 Why we need @wraps? @wrap is used to preserve metadata of the wrap function
 
-see this probelem:
+see this problem:
 
 ```python
 def log_function_data(fn):
