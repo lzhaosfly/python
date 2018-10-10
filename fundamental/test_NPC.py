@@ -1,5 +1,11 @@
 import unittest
+
 from NPC import NPC
+
+
+class Test:
+    def __init__(self, npc: NPC):
+        self.npc = npc
 
 
 class NPCTests(unittest.TestCase):
