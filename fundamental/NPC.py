@@ -7,4 +7,4 @@ class Character:
 
 class NPC(Character):
     def speak(self):
-        print("I heard there were monsters running around last night!")
+        print(f"{self.name} heard there were monsters running around last night!")
