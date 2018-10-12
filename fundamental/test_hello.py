@@ -9,3 +9,10 @@ class HelloTests(unittest.TestCase):
     def setUp(self):
         """before Hello test"""
         pass
+
+
+def test(a: str, b: int):
+    return a
+
+
+test(123, 3)

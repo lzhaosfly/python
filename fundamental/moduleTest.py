@@ -8,6 +8,7 @@ color = input("What color? ")
 def generate_art(msg: str, color):
     valid_color = ('red', 'green', 'yellow', 'blue',
                    'magenta', 'cyan', 'white')
+
     if color not in valid_color:
         color = 'blue'
     ascii_art = figlet_format(msg)
