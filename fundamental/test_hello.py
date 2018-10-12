@@ -1,18 +1,2 @@
-"""This is Hello Unit Test"""
-
-import unittest
-
-
-class HelloTests(unittest.TestCase):
-    """This is Hello Unit Test class"""
-
-    def setUp(self):
-        """before Hello test"""
-        pass
-
-
-def test(a: str, b: int):
-    return a
-
-
-test(123, 3)
+age: str = input("What's your age? ")
+print("your age is ", age, "wow")

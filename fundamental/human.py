@@ -1,5 +1,5 @@
 class Human(object):
-    def __init__(self, first, last, age):
+    def __init__(self, first: str, last, age):
         self._first = first
         self._last = last
         if age > 0:
