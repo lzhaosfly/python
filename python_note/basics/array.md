@@ -14,6 +14,8 @@ if 4 in a:
 
 `[1].append(2) = [1].push(2) (js)`
 `[1, 2].extend([1, 2, 3]) = [...[1, 2]], ...[1, 2, 3]] (js)`
+`[1, 2] + [1, 2, 3]` return [1, 2, 1, 2, 3]
+`[1, 2] * 3` return [1, 2, 1, 2, 1, 2]
 
 `clear()` to remove all items
 `pop()` to remove the last items
@@ -22,10 +24,16 @@ if 4 in a:
 `count(element)` will give you how many element shows in this array
 `slice(start:end:step)` same as js slice
 `index(x)` return the index of x
+`insert(i, x)` insert x to **index** i. Like js `splice(i, 1, x)`
+`max([1,2,3,4])` same as js `Math.max(...[1,2,3,4])`
 
 `reverse()` same as js
 `sort()` same as js
-`join()` same as js
+`'&'.join(str(x) for x in [1,2,3])` same as `[1,2,3].join('&')` js
+
+Note:
+
+-   Only **string array** can be **join**.
 
 ## 3. reverse a string/list trick
 
