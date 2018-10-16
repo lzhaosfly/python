@@ -50,7 +50,7 @@ file.closed() # True
 import os
 
 # Using with, no need to close file
-with open(os.path.join(os.path.dirname(__file__), 'hello.py')) as file:
+with open(os.path.join(os.path.dirname(__file__), 'hello.py'), encoding='utf-8', erros='ignore') as file:
     for line in file: #read line
         print(line)
 
