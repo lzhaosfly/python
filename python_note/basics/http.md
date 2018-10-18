@@ -11,7 +11,7 @@
 ```python
 import requests
 
-r = requests.get('https://api.github.com/user', auth=('user', 'pass'))
+r = requests.get('https://api.github.com/user', auth=('user', 'pass')) # also working for download a file
 r.status_code # 200
 r.headers['content-type'] # 'application/json; charset=utf8'
 r.encoding # 'utf-8'

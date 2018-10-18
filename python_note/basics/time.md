@@ -90,6 +90,12 @@ import datetime
 now = datetime.datetime.now()  # 2018-06-01 17:42:29.531880
 delta = datetime.timedelta(120)
 print(now + delta)  # 2018-09-29 17:49:04.437254
+
+delta = datetime.timedelta(days=11, hours=10, minutes=9, seconds=8)
+print(delta.days, delta.seconds, delta.microseconds) # 11, 36548(10 hours, 9 min- utes, and 8 seconds, expressed in seconds), 0
+
+delta.total_seconds() # 986948.0
+str(delta) #' 11 days, 10:09:08'
 ```
 
 ## 5. calendar

@@ -36,9 +36,9 @@ print(jane.age)
 
 There's a convention way for these 4 diffrent format:
 
-*   name: public, can be access from outside class.
-*   \_name: private, only used within a class
-*   \_\_name: is only for current class. Inherit will not get this variable or method.
+*   name: public, can be access from outside class. like **public**.
+*   \_name: private, only used within a class or its son class. Outside can still directly get, but not recommand! like **protected**
+*   \_\_name: is only for current class. Inherit will not get this variable or method. like **private**.
 *   \_\_name\_\_: it's for python internal function
 
 ## 3. class attributes and class method
@@ -142,3 +142,17 @@ class Model(metaclass=ABCMeta):
     def foo(self):
         """This method should implement how to foo the model."""
 ```
+
+## 8. magic __slots__ (limit dynamic added properties)
+
+```python
+class Character:
+    __slots__ = ('name', 'hp', 'level', 'age', 'height')
+
+    def __init__(self, name: str, hp: int, level: str):
+        self.name = name
+        self.hp = hp
+        self.level = level
+```
+
+Note: in the above example, `Character` can only have `('name', 'hp', 'level', 'age', 'height')` properties. If you dynamiclly add other property, it will throw error.

@@ -1,4 +1,6 @@
 class Character:
+    __slots__ = ('name', 'hp', 'level', 'age', 'height')
+
     def __init__(self, name: str, hp: int, level: str):
         self.name = name
         self.hp = hp
