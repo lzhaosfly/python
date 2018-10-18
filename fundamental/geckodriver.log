@@ -1,0 +1,276 @@
+1539899484515	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/28/xvf4mwws7dv8fq8s7875qs1493qdrk/T/rust_mozprofile.toPknvU7Zf4u"
+1539899487152	addons.xpi-utils	WARN	addMetadata: Add-on {972ce4c6-7e08-4474-a285-3208198ce6fd} is invalid: Error: Non-restartless extensions no longer supported (resource://gre/modules/addons/XPIInstall.jsm:646:13) JS Stack trace: loadManifestFromRDF@XPIInstall.jsm:646:13
+loadFromRDF@XPIInstall.jsm:786:23
+awaitPromise@XPIProvider.jsm:190:3
+syncLoadManifestFromFile@XPIInstall.jsm:866:10
+addMetadata@XPIDatabase.jsm:2386:21
+processFileChanges@XPIDatabase.jsm:2727:21
+checkForChanges@XPIProvider.jsm:2539:34
+startup@XPIProvider.jsm:2120:25
+callProvider@AddonManager.jsm:206:12
+_startProvider@AddonManager.jsm:654:5
+startup@AddonManager.jsm:813:9
+startup@AddonManager.jsm:2811:5
+observe@addonManager.js:66:9
+1539899487153	addons.xpi-utils	WARN	Could not uninstall invalid item from locked install location
+2018-10-18 14:51:28.180 plugin-container[10665:6510782] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x7f43, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+2018-10-18 14:51:28.580 plugin-container[10669:6510892] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x8043, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+JavaScript error: resource://gre/modules/addons/XPIProvider.jsm, line 2583: TypeError: addon is null
+1539899488942	Marionette	INFO	Listening on port 56193
+2018-10-18 14:51:29.336 plugin-container[10681:6511034] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x8a3f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+2018-10-18 14:51:35.541 plugin-container[10769:6511380] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x7503, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1539899508365	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/28/xvf4mwws7dv8fq8s7875qs1493qdrk/T/rust_mozprofile.pZEHFbuhGaGl"
+1539899509571	addons.xpi-utils	WARN	addMetadata: Add-on {972ce4c6-7e08-4474-a285-3208198ce6fd} is invalid: Error: Non-restartless extensions no longer supported (resource://gre/modules/addons/XPIInstall.jsm:646:13) JS Stack trace: loadManifestFromRDF@XPIInstall.jsm:646:13
+loadFromRDF@XPIInstall.jsm:786:23
+awaitPromise@XPIProvider.jsm:190:3
+syncLoadManifestFromFile@XPIInstall.jsm:866:10
+addMetadata@XPIDatabase.jsm:2386:21
+processFileChanges@XPIDatabase.jsm:2727:21
+checkForChanges@XPIProvider.jsm:2539:34
+startup@XPIProvider.jsm:2120:25
+callProvider@AddonManager.jsm:206:12
+_startProvider@AddonManager.jsm:654:5
+startup@AddonManager.jsm:813:9
+startup@AddonManager.jsm:2811:5
+observe@addonManager.js:66:9
+1539899509571	addons.xpi-utils	WARN	Could not uninstall invalid item from locked install location
+2018-10-18 14:51:50.507 plugin-container[10903:6512203] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x8843, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+2018-10-18 14:51:50.845 plugin-container[10911:6512252] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x8803, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+JavaScript error: resource://gre/modules/addons/XPIProvider.jsm, line 2583: TypeError: addon is null
+1539899511239	Marionette	INFO	Listening on port 56234
+1539899511381	Marionette	WARN	TLS certificate errors will be ignored for this session
+1539899511437	Marionette	DEBUG	[4294967297] Frame script loaded
+1539899511458	Marionette	DEBUG	[4294967297] Frame script registered
+1539899511486	Marionette	DEBUG	[4294967297] Received DOM event beforeunload for about:blank
+2018-10-18 14:51:51.706 plugin-container[10941:6512442] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x743f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1539899512077	Marionette	DEBUG	[4294967297] Received DOM event pagehide for about:blank
+JavaScript warning: https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://stockcharts.com/styles/com.stockcharts.workbench.sc/scui.js?v=20180209, line 1273: unreachable code after return statement
+1539899514958	Marionette	DEBUG	[4294967297] Received DOM event DOMContentLoaded for https://stockcharts.com/h-sc/ui
+1539899521661	Marionette	DEBUG	[4294967297] Received observer notification outer-window-destroyed for 4294967316
+1539899521662	Marionette	DEBUG	[4294967297] Received observer notification outer-window-destroyed for 4294967314
+1539899527778	Marionette	DEBUG	[4294967297] Received DOM event beforeunload for https://stockcharts.com/h-sc/ui
+1539899527830	Marionette	DEBUG	[4294967297] Received DOM event unload for https://stockcharts.com/h-sc/ui
+1539899527886	Marionette	DEBUG	[4294967297] Received observer notification outer-window-destroyed for 4294967426
+1539899527886	Marionette	DEBUG	[4294967297] Received observer notification outer-window-destroyed for 4294967427
+1539899527886	Marionette	DEBUG	[4294967297] Received observer notification outer-window-destroyed for 4294967428
+1539899527886	Marionette	DEBUG	[4294967297] Received observer notification outer-window-destroyed for 4294967429
+1539899527886	Marionette	DEBUG	[4294967297] Received observer notification outer-window-destroyed for 4294967430
+1539899527886	Marionette	DEBUG	[4294967297] Received observer notification outer-window-destroyed for 4294967431
+1539899527887	Marionette	DEBUG	[4294967297] Received observer notification outer-window-destroyed for 4294967432
+1539899527887	Marionette	DEBUG	[4294967297] Received observer notification outer-window-destroyed for 4294967433
+1539899527888	Marionette	DEBUG	[4294967297] Received observer notification outer-window-destroyed for 4294967434
+1539899527888	Marionette	DEBUG	[4294967297] Received observer notification outer-window-destroyed for 4294967420
+1539899527888	Marionette	DEBUG	[4294967297] Received observer notification outer-window-destroyed for 4294967301
+1539899527888	Marionette	DEBUG	[4294967297] Received observer notification outer-window-destroyed for 4294967337
+1539899527888	Marionette	DEBUG	[4294967297] Received observer notification outer-window-destroyed for 4294967318
+1539899527888	Marionette	DEBUG	[4294967297] Received observer notification outer-window-destroyed for 4294967374
+1539899527889	Marionette	DEBUG	[4294967297] Received observer notification outer-window-destroyed for 4294967372
+1539899527889	Marionette	DEBUG	[4294967297] Received observer notification outer-window-destroyed for 4294967377
+1539899527889	Marionette	DEBUG	[4294967297] Received observer notification outer-window-destroyed for 4294967353
+1539899527889	Marionette	DEBUG	[4294967297] Received observer notification outer-window-destroyed for 4294967395
+1539899527890	Marionette	DEBUG	[4294967297] Received observer notification outer-window-destroyed for 4294967382
+1539899527890	Marionette	DEBUG	[4294967297] Received observer notification outer-window-destroyed for 4294967380
+1539899527890	Marionette	DEBUG	[4294967297] Received observer notification outer-window-destroyed for 4294967394
+1539899527890	Marionette	DEBUG	[4294967297] Received observer notification outer-window-destroyed for 4294967354
+1539899527890	Marionette	DEBUG	[4294967297] Received observer notification outer-window-destroyed for 4294967398
+1539899527890	Marionette	DEBUG	[4294967297] Received observer notification outer-window-destroyed for 4294967386
+1539899527890	Marionette	DEBUG	[4294967297] Received observer notification outer-window-destroyed for 4294967383
+1539899527891	Marionette	DEBUG	[4294967297] Received observer notification outer-window-destroyed for 4294967417
+1539899527891	Marionette	DEBUG	[4294967297] Received observer notification outer-window-destroyed for 4294967355
+1539899527891	Marionette	DEBUG	[4294967297] Received observer notification outer-window-destroyed for 4294967413
+1539899527891	Marionette	DEBUG	[4294967297] Received observer notification outer-window-destroyed for 4294967421
+1539899527891	Marionette	DEBUG	[4294967297] Received observer notification outer-window-destroyed for 4294967400
+1539899527891	Marionette	DEBUG	[4294967297] Received observer notification outer-window-destroyed for 4294967387
+1539899527891	Marionette	DEBUG	[4294967297] Received observer notification outer-window-destroyed for 4294967406
+1539899527892	Marionette	DEBUG	[4294967297] Received observer notification outer-window-destroyed for 4294967356
+1539899527892	Marionette	DEBUG	[4294967297] Received observer notification outer-window-destroyed for 4294967403
+1539899527892	Marionette	DEBUG	[4294967297] Received observer notification outer-window-destroyed for 4294967390
+1539899527892	Marionette	DEBUG	[4294967297] Received observer notification outer-window-destroyed for 4294967407
+1539899527892	Marionette	DEBUG	[4294967297] Received observer notification outer-window-destroyed for 4294967357
+1539899527892	Marionette	DEBUG	[4294967297] Received observer notification outer-window-destroyed for 4294967351
+1539899527893	Marionette	DEBUG	[4294967297] Received observer notification outer-window-destroyed for 4294967334
+1539899527893	Marionette	DEBUG	[4294967297] Received observer notification outer-window-destroyed for 4294967370
+1539899527893	Marionette	DEBUG	[4294967297] Received observer notification outer-window-destroyed for 4294967307
+1539899527893	Marionette	DEBUG	[4294967297] Received observer notification outer-window-destroyed for 4294967303
+1539899527893	Marionette	DEBUG	[4294967297] Received observer notification outer-window-destroyed for 4294967327
+1539899527894	Marionette	DEBUG	[4294967297] Received observer notification outer-window-destroyed for 4294967345
+1539899527894	Marionette	DEBUG	[4294967297] Received observer notification outer-window-destroyed for 4294967343
+1539899527894	Marionette	DEBUG	[4294967297] Received observer notification outer-window-destroyed for 4294967329
+1539899527894	Marionette	DEBUG	[4294967297] Received observer notification outer-window-destroyed for 4294967325
+1539899527894	Marionette	DEBUG	[4294967297] Received observer notification outer-window-destroyed for 4294967341
+1539899527894	Marionette	DEBUG	[4294967297] Received observer notification outer-window-destroyed for 4294967309
+1539899527895	Marionette	DEBUG	[4294967297] Received observer notification outer-window-destroyed for 4294967305
+1539899527895	Marionette	DEBUG	[4294967297] Received observer notification outer-window-destroyed for 4294967311
+1539899527895	Marionette	DEBUG	[4294967297] Received observer notification outer-window-destroyed for 4294967323
+1539899527895	Marionette	DEBUG	[4294967297] Received observer notification outer-window-destroyed for 4294967363
+1539899527895	Marionette	DEBUG	[4294967297] Received observer notification outer-window-destroyed for 4294967349
+1539899527895	Marionette	DEBUG	[4294967297] Received observer notification outer-window-destroyed for 4294967333
+1539899527896	Marionette	DEBUG	[4294967297] Received observer notification outer-window-destroyed for 4294967297
+1539899547231	Marionette	INFO	Stopped listening on port 56234
+1539899561442	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/28/xvf4mwws7dv8fq8s7875qs1493qdrk/T/rust_mozprofile.18ARC7dkTjJ3"
+1539899562135	addons.xpi-utils	WARN	addMetadata: Add-on {972ce4c6-7e08-4474-a285-3208198ce6fd} is invalid: Error: Non-restartless extensions no longer supported (resource://gre/modules/addons/XPIInstall.jsm:646:13) JS Stack trace: loadManifestFromRDF@XPIInstall.jsm:646:13
+loadFromRDF@XPIInstall.jsm:786:23
+awaitPromise@XPIProvider.jsm:190:3
+syncLoadManifestFromFile@XPIInstall.jsm:866:10
+addMetadata@XPIDatabase.jsm:2386:21
+processFileChanges@XPIDatabase.jsm:2727:21
+checkForChanges@XPIProvider.jsm:2539:34
+startup@XPIProvider.jsm:2120:25
+callProvider@AddonManager.jsm:206:12
+_startProvider@AddonManager.jsm:654:5
+startup@AddonManager.jsm:813:9
+startup@AddonManager.jsm:2811:5
+observe@addonManager.js:66:9
+1539899562136	addons.xpi-utils	WARN	Could not uninstall invalid item from locked install location
+2018-10-18 14:52:42.943 plugin-container[11611:6515170] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x7543, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+2018-10-18 14:52:43.231 plugin-container[11612:6515198] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x7b3f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+JavaScript error: resource://gre/modules/addons/XPIProvider.jsm, line 2583: TypeError: addon is null
+1539899563458	Marionette	INFO	Listening on port 56536
+1539899563498	Marionette	WARN	TLS certificate errors will be ignored for this session
+1539899563538	Marionette	DEBUG	[4294967297] Frame script loaded
+1539899563539	Marionette	DEBUG	[4294967297] Frame script registered
+1539899563564	Marionette	DEBUG	[4294967297] Received DOM event beforeunload for about:blank
+2018-10-18 14:52:43.922 plugin-container[11613:6515312] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x8c43, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1539899564108	Marionette	DEBUG	[4294967297] Received DOM event pagehide for about:blank
+JavaScript warning: https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://stockcharts.com/styles/com.stockcharts.workbench.sc/scui.js?v=20180209, line 1273: unreachable code after return statement
+1539899567407	Marionette	DEBUG	[4294967297] Received DOM event DOMContentLoaded for https://stockcharts.com/h-sc/ui
+1539899572557	Marionette	DEBUG	[4294967297] Received observer notification outer-window-destroyed for 4294967309
+JavaScript warning: https://stockcharts.com/styles/com.stockcharts.workbench.sc/scui.js?v=20180209, line 1273: unreachable code after return statement
+1539899576529	Marionette	DEBUG	[4294967297] Received observer notification outer-window-destroyed for 4294967323
+1539899576529	Marionette	DEBUG	[4294967297] Received observer notification outer-window-destroyed for 4294967321
+1539899587104	Marionette	DEBUG	[4294967297] Received DOM event beforeunload for https://stockcharts.com/h-sc/ui
+1539899587364	Marionette	DEBUG	[4294967297] Received DOM event unload for https://stockcharts.com/h-sc/ui
+1539899587489	Marionette	DEBUG	[4294967297] Received observer notification outer-window-destroyed for 4294967382
+1539899587490	Marionette	DEBUG	[4294967297] Received observer notification outer-window-destroyed for 4294967384
+1539899587490	Marionette	DEBUG	[4294967297] Received observer notification outer-window-destroyed for 4294967386
+1539899587490	Marionette	DEBUG	[4294967297] Received observer notification outer-window-destroyed for 4294967388
+1539899587490	Marionette	DEBUG	[4294967297] Received observer notification outer-window-destroyed for 4294967390
+1539899587491	Marionette	DEBUG	[4294967297] Received observer notification outer-window-destroyed for 4294967392
+1539899587492	Marionette	DEBUG	[4294967297] Received observer notification outer-window-destroyed for 4294967394
+1539899587492	Marionette	DEBUG	[4294967297] Received observer notification outer-window-destroyed for 4294967396
+1539899587492	Marionette	DEBUG	[4294967297] Received observer notification outer-window-destroyed for 4294967398
+1539899587492	Marionette	DEBUG	[4294967297] Received observer notification outer-window-destroyed for 4294967372
+1539899587492	Marionette	DEBUG	[4294967297] Received observer notification outer-window-destroyed for 4294967301
+1539899587493	Marionette	DEBUG	[4294967297] Received observer notification outer-window-destroyed for 4294967355
+1539899587493	Marionette	DEBUG	[4294967297] Received observer notification outer-window-destroyed for 4294967325
+1539899587493	Marionette	DEBUG	[4294967297] Received observer notification outer-window-destroyed for 4294967409
+1539899587493	Marionette	DEBUG	[4294967297] Received observer notification outer-window-destroyed for 4294967403
+Handler function NetworkEventActorProxy.addSecurityInfo threw an exception: [Exception... "Component not initialized"  nsresult: "0xc1f30001 (NS_ERROR_NOT_INITIALIZED)"  location: "JS frame :: resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js :: NetworkEventActorProxy.methodFactory/< :: line 1888"  data: no]
+Stack: NetworkEventActorProxy.methodFactory/<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:1888:5
+exports.makeInfallible/<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/ThreadSafeDevToolsUtils.js:109:14
+NetworkResponseListener.prototype._getSecurityInfo<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:519:5
+exports.makeInfallible/<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/ThreadSafeDevToolsUtils.js:109:14
+onStartRequest@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:439:5
+Line: 1888, column: 0
+1539899587493	Marionette	DEBUG	[4294967297] Received observer notification outer-window-destroyed for 4294967411
+console.error: "Handler function NetworkEventActorProxy.addSecurityInfo threw an exception: [Exception... \"Component not initialized\"  nsresult: \"0xc1f30001 (NS_ERROR_NOT_INITIALIZED)\"  location: \"JS frame :: resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js :: NetworkEventActorProxy.methodFactory/< :: line 1888\"  data: no]\nStack: NetworkEventActorProxy.methodFactory/<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:1888:5\nexports.makeInfallible/<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/ThreadSafeDevToolsUtils.js:109:14\nNetworkResponseListener.prototype._getSecurityInfo<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:519:5\nexports.makeInfallible/<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/ThreadSafeDevToolsUtils.js:109:14\nonStartRequest@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:439:5\nLine: 1888, column: 0"
+1539899587493	Marionette	DEBUG	[4294967297] Received observer notification outer-window-destroyed for 4294967362
+1539899587494	Marionette	DEBUG	[4294967297] Received observer notification outer-window-destroyed for 4294967443
+1539899587494	Marionette	DEBUG	[4294967297] Received observer notification outer-window-destroyed for 4294967427
+1539899587494	Marionette	DEBUG	[4294967297] Received observer notification outer-window-destroyed for 4294967445
+1539899587494	Marionette	DEBUG	[4294967297] Received observer notification outer-window-destroyed for 4294967364
+1539899587494	Marionette	DEBUG	[4294967297] Received observer notification outer-window-destroyed for 4294967429
+Handler function NetworkEventActorProxy.addSecurityInfo threw an exception: [Exception... "Component not initialized"  nsresult: "0xc1f30001 (NS_ERROR_NOT_INITIALIZED)"  location: "JS frame :: resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js :: NetworkEventActorProxy.methodFactory/< :: line 1888"  data: no]
+Stack: NetworkEventActorProxy.methodFactory/<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:1888:5
+exports.makeInfallible/<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/ThreadSafeDevToolsUtils.js:109:14
+NetworkResponseListener.prototype._getSecurityInfo<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:519:5
+exports.makeInfallible/<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/ThreadSafeDevToolsUtils.js:109:14
+onStartRequest@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:439:5
+Line: 1888, column: 0
+1539899587494	Marionette	DEBUG	[4294967297] Received observer notification outer-window-destroyed for 4294967420
+console.error: "Handler function NetworkEventActorProxy.addSecurityInfo threw an exception: [Exception... \"Component not initialized\"  nsresult: \"0xc1f30001 (NS_ERROR_NOT_INITIALIZED)\"  location: \"JS frame :: resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js :: NetworkEventActorProxy.methodFactory/< :: line 1888\"  data: no]\nStack: NetworkEventActorProxy.methodFactory/<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:1888:5\nexports.makeInfallible/<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/ThreadSafeDevToolsUtils.js:109:14\nNetworkResponseListener.prototype._getSecurityInfo<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:519:5\nexports.makeInfallible/<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/ThreadSafeDevToolsUtils.js:109:14\nonStartRequest@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:439:5\nLine: 1888, column: 0"
+1539899587494	Marionette	DEBUG	[4294967297] Received observer notification outer-window-destroyed for 4294967418
+1539899587495	Marionette	DEBUG	[4294967297] Received observer notification outer-window-destroyed for 4294967437
+1539899587495	Marionette	DEBUG	[4294967297] Received observer notification outer-window-destroyed for 4294967366
+1539899587495	Marionette	DEBUG	[4294967297] Received observer notification outer-window-destroyed for 4294967450
+1539899587495	Marionette	DEBUG	[4294967297] Received observer notification outer-window-destroyed for 4294967455
+1539899587495	Marionette	DEBUG	[4294967297] Received observer notification outer-window-destroyed for 4294967439
+1539899587495	Marionette	DEBUG	[4294967297] Received observer notification outer-window-destroyed for 4294967425
+Handler function NetworkEventActorProxy.addSecurityInfo threw an exception: [Exception... "Component not initialized"  nsresult: "0xc1f30001 (NS_ERROR_NOT_INITIALIZED)"  location: "JS frame :: resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js :: NetworkEventActorProxy.methodFactory/< :: line 1888"  data: no]
+Stack: NetworkEventActorProxy.methodFactory/<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:1888:5
+exports.makeInfallible/<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/ThreadSafeDevToolsUtils.js:109:14
+NetworkResponseListener.prototype._getSecurityInfo<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:519:5
+exports.makeInfallible/<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/ThreadSafeDevToolsUtils.js:109:14
+onStartRequest@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:439:5
+Line: 1888, column: 0
+1539899587495	Marionette	DEBUG	[4294967297] Received observer notification outer-window-destroyed for 4294967441
+console.error: "Handler function NetworkEventActorProxy.addSecurityInfo threw an exception: [Exception... \"Component not initialized\"  nsresult: \"0xc1f30001 (NS_ERROR_NOT_INITIALIZED)\"  location: \"JS frame :: resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js :: NetworkEventActorProxy.methodFactory/< :: line 1888\"  data: no]\nStack: NetworkEventActorProxy.methodFactory/<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:1888:5\nexports.makeInfallible/<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/ThreadSafeDevToolsUtils.js:109:14\nNetworkResponseListener.prototype._getSecurityInfo<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:519:5\nexports.makeInfallible/<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/ThreadSafeDevToolsUtils.js:109:14\nonStartRequest@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:439:5\nLine: 1888, column: 0"
+1539899587496	Marionette	DEBUG	[4294967297] Received observer notification outer-window-destroyed for 4294967368
+1539899587496	Marionette	DEBUG	[4294967297] Received observer notification outer-window-destroyed for 4294967432
+Handler function NetworkEventActorProxy.addSecurityInfo threw an exception: [Exception... "Component not initialized"  nsresult: "0xc1f30001 (NS_ERROR_NOT_INITIALIZED)"  location: "JS frame :: resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js :: NetworkEventActorProxy.methodFactory/< :: line 1888"  data: no]
+Stack: NetworkEventActorProxy.methodFactory/<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:1888:5
+exports.makeInfallible/<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/ThreadSafeDevToolsUtils.js:109:14
+NetworkResponseListener.prototype._getSecurityInfo<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:519:5
+exports.makeInfallible/<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/ThreadSafeDevToolsUtils.js:109:14
+onStartRequest@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:439:5
+Line: 1888, column: 0
+console.error: "Handler function NetworkEventActorProxy.addSecurityInfo threw an exception: [Exception... \"Component not initialized\"  nsresult: \"0xc1f30001 (NS_ERROR_NOT_INITIALIZED)\"  location: \"JS frame :: resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js :: NetworkEventActorProxy.methodFactory/< :: line 1888\"  data: no]\nStack: NetworkEventActorProxy.methodFactory/<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:1888:5\nexports.makeInfallible/<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/ThreadSafeDevToolsUtils.js:109:14\nNetworkResponseListener.prototype._getSecurityInfo<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:519:5\nexports.makeInfallible/<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/ThreadSafeDevToolsUtils.js:109:14\nonStartRequest@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:439:5\nLine: 1888, column: 0"
+1539899587496	Marionette	DEBUG	[4294967297] Received observer notification outer-window-destroyed for 4294967422
+1539899587496	Marionette	DEBUG	[4294967297] Received observer notification outer-window-destroyed for 4294967435
+1539899587496	Marionette	DEBUG	[4294967297] Received observer notification outer-window-destroyed for 4294967370
+1539899587497	Marionette	DEBUG	[4294967297] Received observer notification outer-window-destroyed for 4294967360
+1539899587497	Marionette	DEBUG	[4294967297] Received observer notification outer-window-destroyed for 4294967349
+1539899587497	Marionette	DEBUG	[4294967297] Received observer notification outer-window-destroyed for 4294967400
+Handler function NetworkEventActorProxy.addResponseContent threw an exception: [Exception... "Component not initialized"  nsresult: "0xc1f30001 (NS_ERROR_NOT_INITIALIZED)"  location: "JS frame :: resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js :: NetworkEventActorProxy.methodFactory/< :: line 1888"  data: no]
+Stack: NetworkEventActorProxy.methodFactory/<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:1888:5
+exports.makeInfallible/<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/ThreadSafeDevToolsUtils.js:109:14
+_onComplete@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:664:5
+onStreamClose@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:621:7
+onInputStreamReady@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:715:7
+Line: 1888, column: 0
+console.error: "Handler function NetworkEventActorProxy.addResponseContent threw an exception: [Exception... \"Component not initialized\"  nsresult: \"0xc1f30001 (NS_ERROR_NOT_INITIALIZED)\"  location: \"JS frame :: resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js :: NetworkEventActorProxy.methodFactory/< :: line 1888\"  data: no]\nStack: NetworkEventActorProxy.methodFactory/<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:1888:5\nexports.makeInfallible/<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/ThreadSafeDevToolsUtils.js:109:14\n_onComplete@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:664:5\nonStreamClose@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:621:7\nonInputStreamReady@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:715:7\nLine: 1888, column: 0"
+1539899587497	Marionette	DEBUG	[4294967297] Received observer notification outer-window-destroyed for 4294967307
+1539899587497	Marionette	DEBUG	[4294967297] Received observer notification outer-window-destroyed for 4294967306
+Handler function NetworkEventActorProxy.addResponseContent threw an exception: [Exception... "Component not initialized"  nsresult: "0xc1f30001 (NS_ERROR_NOT_INITIALIZED)"  location: "JS frame :: resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js :: NetworkEventActorProxy.methodFactory/< :: line 1888"  data: no]
+Stack: NetworkEventActorProxy.methodFactory/<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:1888:5
+exports.makeInfallible/<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/ThreadSafeDevToolsUtils.js:109:14
+_onComplete@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:664:5
+onStreamClose@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:621:7
+onInputStreamReady@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:715:7
+Line: 1888, column: 0
+console.error: "Handler function NetworkEventActorProxy.addResponseContent threw an exception: [Exception... \"Component not initialized\"  nsresult: \"0xc1f30001 (NS_ERROR_NOT_INITIALIZED)\"  location: \"JS frame :: resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js :: NetworkEventActorProxy.methodFactory/< :: line 1888\"  data: no]\nStack: NetworkEventActorProxy.methodFactory/<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:1888:5\nexports.makeInfallible/<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/ThreadSafeDevToolsUtils.js:109:14\n_onComplete@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:664:5\nonStreamClose@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:621:7\nonInputStreamReady@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:715:7\nLine: 1888, column: 0"
+1539899587498	Marionette	DEBUG	[4294967297] Received observer notification outer-window-destroyed for 4294967343
+1539899587498	Marionette	DEBUG	[4294967297] Received observer notification outer-window-destroyed for 4294967358
+Handler function NetworkEventActorProxy.addResponseContent threw an exception: [Exception... "Component not initialized"  nsresult: "0xc1f30001 (NS_ERROR_NOT_INITIALIZED)"  location: "JS frame :: resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js :: NetworkEventActorProxy.methodFactory/< :: line 1888"  data: no]
+Stack: NetworkEventActorProxy.methodFactory/<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:1888:5
+exports.makeInfallible/<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/ThreadSafeDevToolsUtils.js:109:14
+_onComplete@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:664:5
+onStreamClose@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:621:7
+onInputStreamReady@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:715:7
+Line: 1888, column: 0
+console.error: "Handler function NetworkEventActorProxy.addResponseContent threw an exception: [Exception... \"Component not initialized\"  nsresult: \"0xc1f30001 (NS_ERROR_NOT_INITIALIZED)\"  location: \"JS frame :: resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js :: NetworkEventActorProxy.methodFactory/< :: line 1888\"  data: no]\nStack: NetworkEventActorProxy.methodFactory/<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:1888:5\nexports.makeInfallible/<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/ThreadSafeDevToolsUtils.js:109:14\n_onComplete@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:664:5\nonStreamClose@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:621:7\nonInputStreamReady@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:715:7\nLine: 1888, column: 0"
+1539899587498	Marionette	DEBUG	[4294967297] Received observer notification outer-window-destroyed for 4294967353
+Handler function NetworkEventActorProxy.addResponseContent threw an exception: [Exception... "Component not initialized"  nsresult: "0xc1f30001 (NS_ERROR_NOT_INITIALIZED)"  location: "JS frame :: resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js :: NetworkEventActorProxy.methodFactory/< :: line 1888"  data: no]
+Stack: NetworkEventActorProxy.methodFactory/<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:1888:5
+exports.makeInfallible/<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/ThreadSafeDevToolsUtils.js:109:14
+_onComplete@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:664:5
+onStreamClose@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:621:7
+onInputStreamReady@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:715:7
+Line: 1888, column: 0
+console.error: "Handler function NetworkEventActorProxy.addResponseContent threw an exception: [Exception... \"Component not initialized\"  nsresult: \"0xc1f30001 (NS_ERROR_NOT_INITIALIZED)\"  location: \"JS frame :: resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js :: NetworkEventActorProxy.methodFactory/< :: line 1888\"  data: no]\nStack: NetworkEventActorProxy.methodFactory/<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:1888:5\nexports.makeInfallible/<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/ThreadSafeDevToolsUtils.js:109:14\n_onComplete@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:664:5\nonStreamClose@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:621:7\nonInputStreamReady@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:715:7\nLine: 1888, column: 0"
+1539899587498	Marionette	DEBUG	[4294967297] Received observer notification outer-window-destroyed for 4294967345
+1539899587499	Marionette	DEBUG	[4294967297] Received observer notification outer-window-destroyed for 4294967341
+1539899587499	Marionette	DEBUG	[4294967297] Received observer notification outer-window-destroyed for 4294967351
+1539899587499	Marionette	DEBUG	[4294967297] Received observer notification outer-window-destroyed for 4294967308
+1539899587499	Marionette	DEBUG	[4294967297] Received observer notification outer-window-destroyed for 4294967303
+1539899587499	Marionette	DEBUG	[4294967297] Received observer notification outer-window-destroyed for 4294967334
+1539899587500	Marionette	DEBUG	[4294967297] Received observer notification outer-window-destroyed for 4294967337
+1539899587500	Marionette	DEBUG	[4294967297] Received observer notification outer-window-destroyed for 4294967338
+1539899587500	Marionette	DEBUG	[4294967297] Received observer notification outer-window-destroyed for 4294967328
+1539899587500	Marionette	DEBUG	[4294967297] Received observer notification outer-window-destroyed for 4294967318
+1539899587500	Marionette	DEBUG	[4294967297] Received observer notification outer-window-destroyed for 4294967316
+1539899587500	Marionette	DEBUG	[4294967297] Received observer notification outer-window-destroyed for 4294967305
+1539899587501	Marionette	DEBUG	[4294967297] Received observer notification outer-window-destroyed for 4294967331
+1539899587501	Marionette	DEBUG	[4294967297] Received observer notification outer-window-destroyed for 4294967297
