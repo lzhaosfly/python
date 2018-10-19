@@ -18,7 +18,7 @@ elif platform.version() == 'Linux':
 browser = webdriver.Chrome(executable_path=chromeDriverPath)
 
 
-def stockChartsRun(symbol: str, page_load_time: int = 5):
+def stockChartsRun(symbol: str, page_load_time: int = 30):
 
     stockChartsUrl = 'https://stockcharts.com/h-sc/ui'
     browser.set_page_load_timeout(page_load_time)
