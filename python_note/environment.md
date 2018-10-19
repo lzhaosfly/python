@@ -16,7 +16,7 @@ some useful command:
 *   active env: `source activate yourenvname`
 *   install package: `conda/pip install packages`
 *   list virtual env: `conda info --envs`
-*   remove env: `conda remove --name myenv --all`
+*   remove env: `conda remove --name [myenv] --all`
 *   export env: `conda env export > environment.yml`
 *   recreate a env from yml file: `conda env create -f environment.yml`
 *   update env: `conda env update`

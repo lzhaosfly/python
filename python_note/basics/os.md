@@ -1,5 +1,18 @@
 # OS module
 
+## 0. if you want to check system version
+
+if you want to check system version, then please check `platform.version()`. 
+
+```python
+if platform.version() == 'Windows':
+    chromeDriverPath = './chromedriver_win32.exe'
+elif platform.version() == 'Linux':
+    chromeDriverPath = './chromedriver_linux'
+elif platform.version() == 'Darwin' :
+    chromeDriverPath = './chromedriver_mac'
+```
+
 ## 1. common module
 
 ```python

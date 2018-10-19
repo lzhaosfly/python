@@ -40,6 +40,8 @@ dependencies:
   - zlib=1.2.11=hf3cbc9b_2
   - pip:
     - pyfiglet==0.7.6
+    - selenium==3.14.1
     - termcolor==1.1.0
+    - urllib3==1.24
 prefix: /Users/lzhao/anaconda3/envs/myPython3
 
