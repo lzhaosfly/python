@@ -1,6 +1,4 @@
 import tkinter
-from tkinter import messagebox
-from tkinter import ttk
 from typing import List, Tuple
 
 # main window
@@ -182,7 +180,5 @@ for value in checkBoxInputs:
     checkBtn = tkinter.Checkbutton(
         win, text=value[0], variable=value[1], command=update)
     checkBtn.pack()
-
-test: List[str] = ['12', '34']
 
 win.mainloop()

@@ -237,7 +237,27 @@ Note:
 ## 11. check box
 
 ```python
+checkBoxInputs: List[Tuple[str, tkinter.BooleanVar]] = [
+    ('Money', tkinter.BooleanVar()),
+    ('Power', tkinter.BooleanVar()),
+    ('People', tkinter.BooleanVar()),
+]
 
+result: List[str] = []
+
+
+def update():
+    result.clear()
+    for item in checkBoxInputs:
+        if item[1].get() and item[0] not in result:
+            result.append(item[0])
+    print(result)
+
+
+for value in checkBoxInputs:
+    checkBtn = tkinter.Checkbutton(
+        win, text=value[0], variable=value[1], command=update)
+    checkBtn.pack()
 ```
 
 ## 12. grid layout
