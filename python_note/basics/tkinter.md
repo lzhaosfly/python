@@ -54,7 +54,7 @@ Note:
 -   You need to bind a `tkinter.Variable()` to your entry when you want to set the entry value
 -   You can use `entry.get()` or `tkinter.Variable().get()` to get the value of the entry
 
-## 4. text (text area)
+## 5. text (text area)
 
 ```python
 # text (textArea)
@@ -69,7 +69,7 @@ Note:
 
 -   If you want to have scroll bar for your text area. Then consider use `from tkinter.scrolledtext import ScrolledText`. ScrolledText has save initial value with Text.
 
-## 5. spin box (like number input)
+## 6. spin box (like number input)
 
 ```python
 # spin box (number input)
@@ -80,7 +80,7 @@ btn = tkinter.Button(win, text="spValue", command=lambda: print(sp.get()))
 btn.pack()
 ```
 
-## 6. list box
+## 7. list box
 
 ```python
 listBoxVar = tkinter.Variable() # only bind this when you want to set or get all the list box value
@@ -122,7 +122,7 @@ Note:
 -   You need to `bind` list box event if you want to use select event. Make sure you sned `event` to your callback function.
 -   `listBox.insert(tkinter.END, item)` to append an item to list box. `listBox.insert(tkinter.ACTIVE, 'in the head')` to insert an item to list box head.
 
-## 7. Menu
+## 8. Menu
 
 ```python
 # 创建一个菜单
@@ -159,6 +159,87 @@ Note:
 -   For window menu, you can use `win.config(menu=menubar)` to add.
 -   For right click menu, you can use bind event `win.bind("<Button-2>", lambda event: menubar.post(event.x_root, event.y_root))`. Here's one important thing: right click for Mac is `<Button-2>`, but for windows and linux is `<Button-3>`
 
-## 8. grid layout
+## 9. message box (alert dialog/modal)
+
+```python
+from tkinter import messagebox
+
+result = messagebox.askquestion("message box tile", "message box content", icon='warning')
+if result == 'yes':
+    print('yes clicked!!!')
+else:
+    print('no clicked!!')
+```
+
+Note:
+
+-   There are different message box: `showinfo, showwarning, showerror, askquestion, askokcancel, askyesno, askretrycancel`
+-   **You must import this way: `from tkinter import messagebox`**
+
+## 10. create a new window
+
+```python
+# main window label
+labelVar = tkinter.StringVar()
+label = tkinter.Label(win, textvariable=labelVar)
+label.pack()
+
+
+def createChildWindow():
+    childWindow = tkinter.Toplevel()
+    childWindow.title('child window')
+    childWindow.geometry('200x100+1600+150')
+
+    entry = tkinter.Entry(childWindow)
+    entry.pack()
+
+    def add():
+        labelVar.set(entry.get())
+        childWindow.destroy()
+
+    addBtn = tkinter.Button(childWindow, text="add",
+                            command=add)
+    cancelBtn = tkinter.Button(
+        childWindow, text="cancel", command=childWindow.destroy)
+    addBtn.pack()
+    cancelBtn.pack()
+
+
+btn = tkinter.Button(win, text='show a child window',
+                     command=createChildWindow)
+btn.pack()
+```
+
+Note:
+
+-   Use `childWindow = tkinter.Toplevel()` to set up a child window.
+-   Use global value to bind data with your child window data.
+
+
+## 10. combo box
+
+```python
+from tkinter import ttk
+
+# comboBox
+comboBox = ttk.Combobox(win)
+comboBox.pack()
+
+comboBox['value'] = ("CA", "NY", "TA")
+comboBox.current(0)  # set selection
+
+comboBox.bind('<<ComboboxSelected>>', lambda event: print(comboBox.get()))
+```
+
+Note:
+-   You must use `from tkinter import ttk` and then use ttk to create Combo box
+
+## 11. check box
+
+```python
+
+```
+
+## 12. grid layout
 
 [check this page](https://blog.csdn.net/wangyiyan315/article/details/16821381)

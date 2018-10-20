@@ -1,4 +1,7 @@
 import tkinter
+from tkinter import messagebox
+from tkinter import ttk
+from typing import List, Tuple
 
 # main window
 win = tkinter.Tk()
@@ -74,32 +77,112 @@ win.geometry(newGeometry="400x400+1500+30")
 # print(listBoxVar.get())  # get all variable in list box
 # # listBoxVar.set(('1', '2', '3', '4'))  # set these varaible to list
 
-# 创建一个菜单
-menubar = tkinter.Menu(win)
-# 菜单选项
-menu1 = tkinter.Menu(menubar, tearoff=False)
+# # 创建一个菜单
+# menubar = tkinter.Menu(win)
+# # 菜单选项
+# menu1 = tkinter.Menu(menubar, tearoff=False)
 
-# 给菜单选项添加内容
-for item in ['Python', 'NodeJS', 'Java', 'PHP', '退出']:
-    if item == '退出':
-        menu1.add_separator()
-        menu1.add_command(label=item, command=win.quit)
-    else:
-        menu1.add_command(
-            label=item, command=lambda item=item: print(f'{item} clicked!!!'))
+# # 给菜单选项添加内容
+# for item in ['Python', 'NodeJS', 'Java', 'PHP', '退出']:
+#     if item == '退出':
+#         menu1.add_separator()
+#         menu1.add_command(label=item, command=win.quit)
+#     else:
+#         menu1.add_command(
+#             label=item, command=lambda item=item: print(f'{item} clicked!!!'))
 
-menubar.add_cascade(label="语言", menu=menu1)
+# menubar.add_cascade(label="语言", menu=menu1)
 
-menu2 = tkinter.Menu(menubar, tearoff=False)
-menu2.add_command(label="red")
-menu2.add_command(label="blue")
+# menu2 = tkinter.Menu(menubar, tearoff=False)
+# menu2.add_command(label="red")
+# menu2.add_command(label="blue")
 
-menubar.add_cascade(label="颜色", menu=menu2)
+# menubar.add_cascade(label="颜色", menu=menu2)
 
-win.config(menu=menubar)  # window menu
+# win.config(menu=menubar)  # window menu
 
-# bind to right click meanu, Mac is <Button-2>, but windows and linux is <Button-3>
-win.bind("<Button-2>", lambda event: menubar.post(event.x_root, event.y_root))
+# # bind to right click meanu, Mac is <Button-2>, but windows and linux is <Button-3>
+# win.bind("<Button-2>", lambda event: menubar.post(event.x_root, event.y_root))
 
+
+# create a new window
+
+# # main window label
+# labelVar = tkinter.StringVar()
+# label = tkinter.Label(win, textvariable=labelVar)
+# label.pack()
+
+
+# def createChildWindow():
+#     childWindow = tkinter.Toplevel()
+#     childWindow.title('child window')
+#     childWindow.geometry('200x100+1600+150')
+
+#     entry = tkinter.Entry(childWindow)
+#     entry.pack()
+
+#     def add():
+#         labelVar.set(entry.get())
+#         childWindow.destroy()
+
+#     addBtn = tkinter.Button(childWindow, text="add",
+#                             command=add)
+#     cancelBtn = tkinter.Button(
+#         childWindow, text="cancel", command=childWindow.destroy)
+#     addBtn.pack()
+#     cancelBtn.pack()
+
+
+# btn = tkinter.Button(win, text='show a child window',
+#                      command=createChildWindow)
+# btn.pack()
+
+
+# create message box
+# def createMessageBox():
+#     result = messagebox.askquestion(
+#         'message box tile', 'are you sure?')
+#     if result == 'yes':
+#         print('yes clicked!!!')
+#     else:
+#         print('no clicked!!')
+
+# btn = tkinter.Button(win, text='show a child window',
+#                      command=createMessageBox)
+# btn.pack()
+
+
+# comboBox
+# comboBox = ttk.Combobox(win)
+# comboBox.pack()
+
+# comboBox['value'] = ("CA", "NY", "TA")
+# comboBox.current(0)  # set selection
+
+# comboBox.bind('<<ComboboxSelected>>', lambda event: print(comboBox.get()))
+
+checkBoxInputs: List[Tuple[str, tkinter.BooleanVar]] = [
+    ('Money', tkinter.BooleanVar()),
+    ('Power', tkinter.BooleanVar()),
+    ('People', tkinter.BooleanVar()),
+]
+
+result: List[str] = []
+
+
+def update():
+    result.clear()
+    for item in checkBoxInputs:
+        if item[1].get() and item[0] not in result:
+            result.append(item[0])
+    print(result)
+
+
+for value in checkBoxInputs:
+    checkBtn = tkinter.Checkbutton(
+        win, text=value[0], variable=value[1], command=update)
+    checkBtn.pack()
+
+test: List[str] = ['12', '34']
 
 win.mainloop()
