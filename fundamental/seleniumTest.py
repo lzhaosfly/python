@@ -1,6 +1,7 @@
 import logging
 import platform
 from selenium import webdriver
+from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.support.ui import Select
 
@@ -18,10 +19,11 @@ elif platform.version() == 'Linux':
 browser = webdriver.Chrome(executable_path=chromeDriverPath)
 
 
-def stockChartsRun(symbol: str, page_load_time: int = 30):
+def stockChartsRun(symbol: str, page_load_time: int = 5):
 
     stockChartsUrl = 'https://stockcharts.com/h-sc/ui'
     browser.set_page_load_timeout(page_load_time)
+    browser.implicitly_wait(page_load_time)
     try:
         browser.get(stockChartsUrl)
     except TimeoutException:

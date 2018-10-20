@@ -1,0 +1,129 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	0	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+datetime	/Users/lzhao/Documents/my_git/python/fundamental/time.py	/^import datetime$/;"	namespace	line:1
+time	/Users/lzhao/Documents/my_git/python/fundamental/time.py	/^import time$/;"	namespace	line:2
+t	/Users/lzhao/Documents/my_git/python/fundamental/time.py	/^t = datetime.time(5, 21, 1)  # 05:21:01$/;"	variable	line:4
+today	/Users/lzhao/Documents/my_git/python/fundamental/time.py	/^today = datetime.date.today()  # 2018-06-01$/;"	variable	line:11
+d1	/Users/lzhao/Documents/my_git/python/fundamental/time.py	/^d1 = datetime.date(2015, 3, 11)$/;"	variable	line:16
+d2	/Users/lzhao/Documents/my_git/python/fundamental/time.py	/^d2 = d1.replace(year=1990)  # datetime.timedelta(9131)$/;"	variable	line:17
+now	/Users/lzhao/Documents/my_git/python/fundamental/time.py	/^now = datetime.datetime.now()  # 2018-06-01 17:42:29.531880$/;"	variable	line:20
+delta	/Users/lzhao/Documents/my_git/python/fundamental/time.py	/^delta = datetime.timedelta(120)$/;"	variable	line:27
+Image	/Users/lzhao/Documents/my_git/python/fundamental/pillowTest.py	/^from PIL import Image, ImageDraw, ImageFont$/;"	namespace	line:1
+ImageDraw	/Users/lzhao/Documents/my_git/python/fundamental/pillowTest.py	/^from PIL import Image, ImageDraw, ImageFont$/;"	namespace	line:1
+ImageFont	/Users/lzhao/Documents/my_git/python/fundamental/pillowTest.py	/^from PIL import Image, ImageDraw, ImageFont$/;"	namespace	line:1
+os	/Users/lzhao/Documents/my_git/python/fundamental/pillowTest.py	/^import os$/;"	namespace	line:2
+imCrop	/Users/lzhao/Documents/my_git/python/fundamental/pillowTest.py	/^imCrop = imSaber2.crop((200, 15, 310, 135))$/;"	variable	line:27
+imageNewPurpleCopy	/Users/lzhao/Documents/my_git/python/fundamental/pillowTest.py	/^imageNewPurpleCopy = imaNewPurple.copy()$/;"	variable	line:34
+im	/Users/lzhao/Documents/my_git/python/fundamental/pillowTest.py	/^im = Image.new('RGBA', (200, 200), 'white')$/;"	variable	line:54
+draw	/Users/lzhao/Documents/my_git/python/fundamental/pillowTest.py	/^draw = ImageDraw.Draw(im)$/;"	variable	line:55
+fill	/Users/lzhao/Documents/my_git/python/fundamental/pillowTest.py	/^             fill='brown')$/;"	variable	line:60
+im	/Users/lzhao/Documents/my_git/python/fundamental/pillowTest.py	/^im = Image.new('RGBA', (200, 200))$/;"	variable	line:65
+draw	/Users/lzhao/Documents/my_git/python/fundamental/pillowTest.py	/^draw = ImageDraw.Draw(im)$/;"	variable	line:66
+FontFolder	/Users/lzhao/Documents/my_git/python/fundamental/pillowTest.py	/^FontFolder = '\/Library\/Fonts'$/;"	variable	line:68
+arialFont	/Users/lzhao/Documents/my_git/python/fundamental/pillowTest.py	/^arialFont = ImageFont.truetype(os.path.join(FontFolder, 'arial.ttf'), 32)$/;"	variable	line:69
+re	/Users/lzhao/Documents/my_git/python/fundamental/regular.py	/^import re$/;"	namespace	line:1
+pattern	/Users/lzhao/Documents/my_git/python/fundamental/regular.py	/^pattern = re.compile(r'(\\d{5})-(\\d{4})')$/;"	variable	line:3
+matches	/Users/lzhao/Documents/my_git/python/fundamental/regular.py	/^matches = pattern.findall('The zip code is 98210-1138. 98210-1138.')$/;"	variable	line:4
+pattern	/Users/lzhao/Documents/my_git/python/fundamental/regular.py	/^pattern = re.compile(r'0(.*)5')$/;"	variable	line:8
+pattern	/Users/lzhao/Documents/my_git/python/fundamental/regular.py	/^pattern = re.compile(r'0(.*?)5')$/;"	variable	line:11
+text	/Users/lzhao/Documents/my_git/python/fundamental/regular.py	/^text = "Last night Mrs. Daisy and Mr. white murdered Ms. Chow"$/;"	variable	line:14
+pattern	/Users/lzhao/Documents/my_git/python/fundamental/regular.py	/^pattern = re.compile(r'(Mr\\.|Mrs\\.|Ms\\.) ([a-z])[a-z]+', re.I)$/;"	variable	line:16
+result0	/Users/lzhao/Documents/my_git/python/fundamental/regular.py	/^result0 = pattern.sub("REDACATED", text)$/;"	variable	line:17
+result1	/Users/lzhao/Documents/my_git/python/fundamental/regular.py	/^result1 = pattern.sub($/;"	variable	line:18
+result2	/Users/lzhao/Documents/my_git/python/fundamental/regular.py	/^result2 = pattern.sub("\\g<1> \\g<2>", text)$/;"	variable	line:21
+Character	/Users/lzhao/Documents/my_git/python/fundamental/NPC.py	/^class Character:$/;"	class	line:1
+__slots__	/Users/lzhao/Documents/my_git/python/fundamental/NPC.py	/^    __slots__ = ('name', 'hp', 'level', 'age', 'height')$/;"	variable	line:2	class:Character
+__init__	/Users/lzhao/Documents/my_git/python/fundamental/NPC.py	/^    def __init__(self, name: str, hp: int, level: str):$/;"	member	line:4	class:Character
+NPC	/Users/lzhao/Documents/my_git/python/fundamental/NPC.py	/^class NPC(Character):$/;"	class	line:10
+speak	/Users/lzhao/Documents/my_git/python/fundamental/NPC.py	/^    def speak(self):$/;"	member	line:11	class:NPC
+name	/Users/lzhao/Documents/my_git/python/fundamental/environment.yml	/^name: myPython3$/;"	function	line:1
+channels	/Users/lzhao/Documents/my_git/python/fundamental/environment.yml	/^channels:$/;"	function	line:2
+dependencies	/Users/lzhao/Documents/my_git/python/fundamental/environment.yml	/^dependencies:$/;"	function	line:4
+prefix	/Users/lzhao/Documents/my_git/python/fundamental/environment.yml	/^prefix: \/Users\/lzhao\/anaconda3\/envs\/myPython3$/;"	function	line:46
+wraps	/Users/lzhao/Documents/my_git/python/fundamental/decorator.py	/^from functools import wraps$/;"	namespace	line:1
+be_polite	/Users/lzhao/Documents/my_git/python/fundamental/decorator.py	/^def be_polite(fn):$/;"	function	line:4
+wrapper	/Users/lzhao/Documents/my_git/python/fundamental/decorator.py	/^    def wrapper(*args, **kwargs):$/;"	function	line:6	function:be_polite
+greet	/Users/lzhao/Documents/my_git/python/fundamental/decorator.py	/^def greet():$/;"	function	line:14
+requests	/Users/lzhao/Documents/my_git/python/fundamental/httpTest.py	/^import requests$/;"	namespace	line:1
+url	/Users/lzhao/Documents/my_git/python/fundamental/httpTest.py	/^url = "http:\/\/www.google.com"$/;"	variable	line:3
+res	/Users/lzhao/Documents/my_git/python/fundamental/httpTest.py	/^res = requests.get(url)$/;"	variable	line:4
+unittest	/Users/lzhao/Documents/my_git/python/fundamental/test_NPC.py	/^import unittest$/;"	namespace	line:1
+NPC	/Users/lzhao/Documents/my_git/python/fundamental/test_NPC.py	/^from NPC import NPC$/;"	namespace	line:3
+Test	/Users/lzhao/Documents/my_git/python/fundamental/test_NPC.py	/^class Test:$/;"	class	line:6
+__init__	/Users/lzhao/Documents/my_git/python/fundamental/test_NPC.py	/^    def __init__(self, npc: NPC):$/;"	member	line:7	class:Test
+NPCTests	/Users/lzhao/Documents/my_git/python/fundamental/test_NPC.py	/^class NPCTests(unittest.TestCase):$/;"	class	line:11
+setUp	/Users/lzhao/Documents/my_git/python/fundamental/test_NPC.py	/^    def setUp(self):$/;"	member	line:12	class:NPCTests
+test_hp	/Users/lzhao/Documents/my_git/python/fundamental/test_NPC.py	/^    def test_hp(self):$/;"	member	line:15	class:NPCTests
+isShuixianhua	/Users/lzhao/Documents/my_git/python/fundamental/assignment/shuixianhua.py	/^def isShuixianhua(n: int):$/;"	function	line:1
+main	/Users/lzhao/Documents/my_git/python/fundamental/assignment/shuixianhua.py	/^def main():$/;"	function	line:10
+logging	/Users/lzhao/Documents/my_git/python/fundamental/seleniumTest.py	/^import logging$/;"	namespace	line:1
+platform	/Users/lzhao/Documents/my_git/python/fundamental/seleniumTest.py	/^import platform$/;"	namespace	line:2
+webdriver	/Users/lzhao/Documents/my_git/python/fundamental/seleniumTest.py	/^from selenium import webdriver$/;"	namespace	line:3
+TimeoutException	/Users/lzhao/Documents/my_git/python/fundamental/seleniumTest.py	/^from selenium.common.exceptions import TimeoutException$/;"	namespace	line:4
+Select	/Users/lzhao/Documents/my_git/python/fundamental/seleniumTest.py	/^from selenium.webdriver.support.ui import Select$/;"	namespace	line:5
+LOG_FORMAT	/Users/lzhao/Documents/my_git/python/fundamental/seleniumTest.py	/^LOG_FORMAT = "%(asctime)s - %(levelname)s - %(message)s"$/;"	variable	line:7
+DATE_FORMAT	/Users/lzhao/Documents/my_git/python/fundamental/seleniumTest.py	/^DATE_FORMAT = "%m\/%d\/%Y %H:%M:%S %p"$/;"	variable	line:8
+chromeDriverPath	/Users/lzhao/Documents/my_git/python/fundamental/seleniumTest.py	/^    chromeDriverPath = '.\/chromedriver_win32.exe'$/;"	variable	line:14
+chromeDriverPath	/Users/lzhao/Documents/my_git/python/fundamental/seleniumTest.py	/^    chromeDriverPath = '.\/chromedriver_linux'$/;"	variable	line:16
+browser	/Users/lzhao/Documents/my_git/python/fundamental/seleniumTest.py	/^browser = webdriver.Chrome(executable_path=chromeDriverPath)$/;"	variable	line:18
+stockChartsRun	/Users/lzhao/Documents/my_git/python/fundamental/seleniumTest.py	/^def stockChartsRun(symbol: str, page_load_time: int = 5):$/;"	function	line:21
+main	/Users/lzhao/Documents/my_git/python/fundamental/seleniumTest.py	/^def main():$/;"	function	line:72
+Enum	/Users/lzhao/Documents/my_git/python/fundamental/enumTest.py	/^from enum import Enum, unique$/;"	namespace	line:1
+unique	/Users/lzhao/Documents/my_git/python/fundamental/enumTest.py	/^from enum import Enum, unique$/;"	namespace	line:1
+Weekday	/Users/lzhao/Documents/my_git/python/fundamental/enumTest.py	/^class Weekday(Enum):$/;"	class	line:5
+Sun	/Users/lzhao/Documents/my_git/python/fundamental/enumTest.py	/^    Sun = 1$/;"	variable	line:6	class:Weekday
+main	/Users/lzhao/Documents/my_git/python/fundamental/enumTest.py	/^def main():$/;"	function	line:9
+Human	/Users/lzhao/Documents/my_git/python/fundamental/human.py	/^class Human(object):$/;"	class	line:1
+__init__	/Users/lzhao/Documents/my_git/python/fundamental/human.py	/^    def __init__(self, first: str, last, age):$/;"	member	line:2	class:Human
+age	/Users/lzhao/Documents/my_git/python/fundamental/human.py	/^    def age(self):$/;"	member	line:12	class:Human
+age	/Users/lzhao/Documents/my_git/python/fundamental/human.py	/^    def age(self, val):$/;"	member	line:16	class:Human
+fullName	/Users/lzhao/Documents/my_git/python/fundamental/human.py	/^    def fullName(self):$/;"	member	line:23	class:Human
+Teacher	/Users/lzhao/Documents/my_git/python/fundamental/human.py	/^class Teacher(Human):$/;"	class	line:31
+__init__	/Users/lzhao/Documents/my_git/python/fundamental/human.py	/^    def __init__(self, first, last, age, class_name):$/;"	member	line:32	class:Teacher
+first	/Users/lzhao/Documents/my_git/python/fundamental/human.py	/^    def first(self):$/;"	member	line:37	class:Teacher
+jane	/Users/lzhao/Documents/my_git/python/fundamental/human.py	/^jane = Human("Jane", "Goodall", -9)$/;"	variable	line:41
+lei	/Users/lzhao/Documents/my_git/python/fundamental/human.py	/^lei = Teacher("lei", "zhao", 27, "test")$/;"	variable	line:49
+__test_var	/Users/lzhao/Documents/my_git/python/fundamental/test_hello.py	/^__test_var = '_test_var'$/;"	variable	line:4
+current_beat	/Users/lzhao/Documents/my_git/python/fundamental/generator.py	/^def current_beat():$/;"	function	line:1
+Counter	/Users/lzhao/Documents/my_git/python/fundamental/iterator.py	/^class Counter(object):$/;"	class	line:1
+__init__	/Users/lzhao/Documents/my_git/python/fundamental/iterator.py	/^    def __init__(self, start, end):$/;"	member	line:2	class:Counter
+__iter__	/Users/lzhao/Documents/my_git/python/fundamental/iterator.py	/^    def __iter__(self):$/;"	member	line:6	class:Counter	file:
+count	/Users/lzhao/Documents/my_git/python/fundamental/iterator.py	/^count = Counter(10, 50)$/;"	variable	line:12
+os	/Users/lzhao/Documents/my_git/python/fundamental/emailSent.py	/^import os$/;"	namespace	line:1
+mimetypes	/Users/lzhao/Documents/my_git/python/fundamental/emailSent.py	/^import mimetypes$/;"	namespace	line:2
+smtplib	/Users/lzhao/Documents/my_git/python/fundamental/emailSent.py	/^import smtplib$/;"	namespace	line:3
+EmailMessage	/Users/lzhao/Documents/my_git/python/fundamental/emailSent.py	/^from email.message import EmailMessage$/;"	namespace	line:4
+MAIL_USER	/Users/lzhao/Documents/my_git/python/fundamental/emailSent.py	/^MAIL_USER = os.environ.get('MAIL_USERNAME')$/;"	variable	line:6
+MAIL_PASSWORD	/Users/lzhao/Documents/my_git/python/fundamental/emailSent.py	/^MAIL_PASSWORD = os.environ.get('MAIL_PASSWORD')$/;"	variable	line:7
+msg	/Users/lzhao/Documents/my_git/python/fundamental/emailSent.py	/^msg = EmailMessage()$/;"	variable	line:9
+file1	/Users/lzhao/Documents/my_git/python/fundamental/emailSent.py	/^    file1 = file.read()$/;"	variable	line:31
+s	/Users/lzhao/Documents/my_git/python/fundamental/emailSent.py	/^    s = smtplib.SMTP_SSL('smtp.gmail.com', 465)$/;"	variable	line:39
+colored	/Users/lzhao/Documents/my_git/python/fundamental/moduleTest.py	/^from termcolor import colored$/;"	namespace	line:1
+figlet_format	/Users/lzhao/Documents/my_git/python/fundamental/moduleTest.py	/^from pyfiglet import figlet_format$/;"	namespace	line:2
+__test_var	/Users/lzhao/Documents/my_git/python/fundamental/moduleTest.py	/^from test_hello import __test_var$/;"	namespace	line:3
+msg	/Users/lzhao/Documents/my_git/python/fundamental/moduleTest.py	/^msg = input("What would you like to print? ")$/;"	variable	line:5
+color	/Users/lzhao/Documents/my_git/python/fundamental/moduleTest.py	/^color = input("What color? ")$/;"	variable	line:6
+generate_art	/Users/lzhao/Documents/my_git/python/fundamental/moduleTest.py	/^def generate_art(msg: str, color):$/;"	function	line:9
+Counter	/Users/lzhao/Documents/my_git/python/fundamental/collection.py	/^from collections import Counter, OrderedDict$/;"	namespace	line:1
+OrderedDict	/Users/lzhao/Documents/my_git/python/fundamental/collection.py	/^from collections import Counter, OrderedDict$/;"	namespace	line:1
+c	/Users/lzhao/Documents/my_git/python/fundamental/collection.py	/^c = Counter([1, 1, 1, 2, 12, 213124, 123, 123, 213])$/;"	variable	line:3
+c	/Users/lzhao/Documents/my_git/python/fundamental/collection.py	/^c = Counter('asdxqwedascasdqwd')$/;"	variable	line:6
+os	/Users/lzhao/Documents/my_git/python/fundamental/emailIMap.py	/^import os$/;"	namespace	line:1
+IMAPClient	/Users/lzhao/Documents/my_git/python/fundamental/emailIMap.py	/^from imapclient import IMAPClient$/;"	namespace	line:2
+email	/Users/lzhao/Documents/my_git/python/fundamental/emailIMap.py	/^import email$/;"	namespace	line:3
+MAIL_USER	/Users/lzhao/Documents/my_git/python/fundamental/emailIMap.py	/^MAIL_USER = os.environ.get('MAIL_USERNAME')$/;"	variable	line:5
+MAIL_PASSWORD	/Users/lzhao/Documents/my_git/python/fundamental/emailIMap.py	/^MAIL_PASSWORD = os.environ.get('MAIL_PASSWORD')$/;"	variable	line:6
+imapObj	/Users/lzhao/Documents/my_git/python/fundamental/emailIMap.py	/^imapObj = IMAPClient('imap.gmail.com', use_uid=True)$/;"	variable	line:8
+UIDs	/Users/lzhao/Documents/my_git/python/fundamental/emailIMap.py	/^UIDs = imapObj.search(['ON', '17-Oct-2018', 'SEEN'])$/;"	variable	line:11
+email_message	/Users/lzhao/Documents/my_git/python/fundamental/emailIMap.py	/^    email_message = email.message_from_bytes(message_data[b'RFC822'])$/;"	variable	line:17
+logging	/Users/lzhao/Documents/my_git/python/fundamental/loggingTest.py	/^import logging$/;"	namespace	line:1
+LOG_FORMAT	/Users/lzhao/Documents/my_git/python/fundamental/loggingTest.py	/^LOG_FORMAT = "%(asctime)s - %(levelname)s - %(message)s"$/;"	variable	line:3
+DATE_FORMAT	/Users/lzhao/Documents/my_git/python/fundamental/loggingTest.py	/^DATE_FORMAT = "%m\/%d\/%Y %H:%M:%S %p"$/;"	variable	line:4
+python.pythonPath	/Users/lzhao/Documents/my_git/python/fundamental/.vscode/settings.json	/^    "python.pythonPath": "\/Users\/lzhao\/anaconda3\/envs\/myPython3\/bin\/python"$/;"	function	line:2
+total	/Users/lzhao/Documents/my_git/python/fundamental/scope.py	/^total = 0$/;"	variable	line:1
+increment	/Users/lzhao/Documents/my_git/python/fundamental/scope.py	/^def increment():$/;"	function	line:4
+os	/Users/lzhao/Documents/my_git/python/fundamental/fileIO.py	/^import os$/;"	namespace	line:1
