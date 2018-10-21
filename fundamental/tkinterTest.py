@@ -159,26 +159,36 @@ win.geometry(newGeometry="400x400+1500+30")
 
 # comboBox.bind('<<ComboboxSelected>>', lambda event: print(comboBox.get()))
 
-checkBoxInputs: List[Tuple[str, tkinter.BooleanVar]] = [
-    ('Money', tkinter.BooleanVar()),
-    ('Power', tkinter.BooleanVar()),
-    ('People', tkinter.BooleanVar()),
-]
+# checkBoxInputs: List[Tuple[str, tkinter.BooleanVar]] = [
+#     ('Money', tkinter.BooleanVar()),
+#     ('Power', tkinter.BooleanVar()),
+#     ('People', tkinter.BooleanVar()),
+# ]
 
-result: List[str] = []
-
-
-def update():
-    result.clear()
-    for item in checkBoxInputs:
-        if item[1].get() and item[0] not in result:
-            result.append(item[0])
-    print(result)
+# result: List[str] = []
 
 
-for value in checkBoxInputs:
-    checkBtn = tkinter.Checkbutton(
-        win, text=value[0], variable=value[1], command=update)
-    checkBtn.pack()
+# def update():
+#     result.clear()
+#     for item in checkBoxInputs:
+#         if item[1].get() and item[0] not in result:
+#             result.append(item[0])
+#     print(result)
+
+
+# for value in checkBoxInputs:
+#     checkBtn = tkinter.Checkbutton(
+#         win, text=value[0], variable=value[1], command=update)
+#     checkBtn.pack()
+
+frame1 = tkinter.Frame(width=300, height=200, bg="red")
+frame2 = tkinter.Frame(width=100, height=100, bg="green")
+frame3 = tkinter.Frame(width=100, height=100, bg="yellow")
+
+# frame1.grid(row=0, column=0, columnspan=1, padx=50, pady=50)
+frame1.grid(row=0, column=0)
+frame2.grid(row=1, column=0)
+frame3.grid(row=1, column=2)
+
 
 win.mainloop()
