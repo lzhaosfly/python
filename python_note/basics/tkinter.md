@@ -263,3 +263,34 @@ for value in checkBoxInputs:
 ## 12. grid layout
 
 [check this page](https://blog.csdn.net/wangyiyan315/article/details/16821381)
+
+```python
+tkinter.Label(win, text="Find:").grid(row=0, column=0, sticky='e')
+tkinter.Entry(win, width=60).grid(row=0, column=1,
+                                  padx=2, pady=20, sticky='we', columnspan=9)
+tkinter.Label(win, text="Replace:").grid(row=1, column=0, sticky='e')
+tkinter.Entry(win).grid(row=1, column=1, padx=2, pady=2, sticky='we',
+                        columnspan=9)
+tkinter.Button(win, text="Find").grid(
+    row=0, column=10, sticky='e' + 'w', padx=2, pady=2)
+tkinter.Button(win, text="Find All").grid(
+    row=1, column=10, sticky='e' + 'w', padx=2)
+tkinter.Button(win, text="Replace").grid(row=2, column=10, sticky='e' +
+                                         'w', padx=2)
+tkinter.Button(win, text="Replace All").grid(
+    row=3, column=10, sticky='e' + 'w', padx=2)
+tkinter.Checkbutton(win, text='Match whole word only').grid(
+    row=2, column=1, columnspan=4, sticky='w')
+tkinter.Checkbutton(win, text='Match Case').grid(
+    row=3, column=1, columnspan=4, sticky='w')
+tkinter.Checkbutton(win, text='Wrap around').grid(
+    row=4, column=1, columnspan=4, sticky='w')
+tkinter.Label(win, text="Direction:").grid(row=2, column=6, sticky='w')
+tkinter.Radiobutton(win, text='Up', value=1).grid(
+    row=3, column=6, columnspan=6, sticky='w')
+tkinter.Radiobutton(win, text='Down', value=2).grid(
+    row=3, column=7, columnspan=2, sticky='e')
+```
+
+This code will give this:
+![layout](./assets/gridLayout.png)

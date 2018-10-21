@@ -181,14 +181,32 @@ win.geometry(newGeometry="400x400+1500+30")
 #         win, text=value[0], variable=value[1], command=update)
 #     checkBtn.pack()
 
-frame1 = tkinter.Frame(width=300, height=200, bg="red")
-frame2 = tkinter.Frame(width=100, height=100, bg="green")
-frame3 = tkinter.Frame(width=100, height=100, bg="yellow")
-
-# frame1.grid(row=0, column=0, columnspan=1, padx=50, pady=50)
-frame1.grid(row=0, column=0)
-frame2.grid(row=1, column=0)
-frame3.grid(row=1, column=2)
+# grid layout
+tkinter.Label(win, text="Find:").grid(row=0, column=0, sticky='e')
+tkinter.Entry(win, width=60).grid(row=0, column=1,
+                                  padx=2, pady=20, sticky='we', columnspan=9)
+tkinter.Label(win, text="Replace:").grid(row=1, column=0, sticky='e')
+tkinter.Entry(win).grid(row=1, column=1, padx=2, pady=2, sticky='we',
+                        columnspan=9)
+tkinter.Button(win, text="Find").grid(
+    row=0, column=10, sticky='e' + 'w', padx=2, pady=2)
+tkinter.Button(win, text="Find All").grid(
+    row=1, column=10, sticky='e' + 'w', padx=2)
+tkinter.Button(win, text="Replace").grid(row=2, column=10, sticky='e' +
+                                         'w', padx=2)
+tkinter.Button(win, text="Replace All").grid(
+    row=3, column=10, sticky='e' + 'w', padx=2)
+tkinter.Checkbutton(win, text='Match whole word only').grid(
+    row=2, column=1, columnspan=4, sticky='w')
+tkinter.Checkbutton(win, text='Match Case').grid(
+    row=3, column=1, columnspan=4, sticky='w')
+tkinter.Checkbutton(win, text='Wrap around').grid(
+    row=4, column=1, columnspan=4, sticky='w')
+tkinter.Label(win, text="Direction:").grid(row=2, column=6, sticky='w')
+tkinter.Radiobutton(win, text='Up', value=1).grid(
+    row=3, column=6, columnspan=6, sticky='w')
+tkinter.Radiobutton(win, text='Down', value=2).grid(
+    row=3, column=7, columnspan=2, sticky='e')
 
 
 win.mainloop()
