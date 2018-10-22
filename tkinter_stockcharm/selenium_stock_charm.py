@@ -1,36 +1,44 @@
-from create_logging import create_logging
 import platform
+import logging
+from create_logging import create_logging
 from selenium import webdriver
 from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.support.ui import Select
-import logging
 
 
-chromeDriverPath: str = './driver/chromedriver_unix'
-if platform.version() == 'Windows':
-    chromeDriverPath = './driver/chromedriver_win32.exe'
-elif platform.version() == 'Linux':
-    chromeDriverPath = './driver/chromedriver_linux'
+def driverInit(driver_logging=create_logging()):
+    chromeDriverPath: str = './driver/chromedriver_unix'
 
-browser = webdriver.Chrome(executable_path=chromeDriverPath)
+    if platform.system() == 'Windows':
+        chromeDriverPath = './driver/chromedriver_win32.exe'
+    elif platform.system() == 'Linux':
+        chromeDriverPath = './driver/chromedriver_linux'
 
+    driver = webdriver.Chrome(executable_path=chromeDriverPath)
 
-def stockChartsRun(symbol: str, page_load_time: int = 30, logging_level=logging.INFO):
-    stock_logging = create_logging(level=logging_level)
-    stockChartsUrl = 'https://stockcharts.com/h-sc/ui'
-    browser.set_page_load_timeout(page_load_time)
+    initialUrl = 'https://www.google.com'
+
     try:
-        browser.get(stockChartsUrl)
+        driver.get(initialUrl)
     except TimeoutException:
-        stock_logging.info(
-            'page not finish load, but we will try to get things now...')
+        driver_logging.info(
+            'try to open google...')
+
+    return driver
+
+
+def stockChartsRun(symbol: str, driver: webdriver, page_load_time: int = 10, stock_logging=create_logging()):
+
+    driver.execute_script("window.open('https://stockcharts.com/h-sc/ui');")
+    driver.switch_to.window(driver.window_handles[-1])
+    driver.implicitly_wait(page_load_time)
 
     # find symbol input
-    symbolInputEl = browser.find_element_by_id('symbol')
+    symbolInputEl = driver.find_element_by_id('symbol')
     symbolInputEl.send_keys(symbol)
 
     # find button and click
-    submitButtonEl = browser.find_element_by_id('submitButton')
+    submitButtonEl = driver.find_element_by_id('submitButton')
     try:
         submitButtonEl.click()
     except TimeoutException:
@@ -39,9 +47,9 @@ def stockChartsRun(symbol: str, page_load_time: int = 30, logging_level=logging.
 
     # set up EMA
     for i in range(3):
-        EMASelectEl = Select(browser.find_element_by_id(f'overType_{i}'))
+        EMASelectEl = Select(driver.find_element_by_id(f'overType_{i}'))
         EMASelectEl.select_by_value('EMA')
-        EMAInputEl = browser.find_element_by_id(f'overArgs_{i}')
+        EMAInputEl = driver.find_element_by_id(f'overArgs_{i}')
         EMAInputEl.clear()
         if i == 0:
             EMAInputEl.send_keys('3')
@@ -51,23 +59,24 @@ def stockChartsRun(symbol: str, page_load_time: int = 30, logging_level=logging.
             EMAInputEl.send_keys('34')
 
     # set up char Attribute
-    rangeSelectEl = Select(browser.find_element_by_id('dataRange'))
+    rangeSelectEl = Select(driver.find_element_by_id('dataRange'))
     rangeSelectEl.select_by_value('predef:0|1|0')
 
-    chartTypeSelectEl = Select(browser.find_element_by_id('symStyle'))
+    chartTypeSelectEl = Select(driver.find_element_by_id('symStyle'))
     chartTypeSelectEl.select_by_visible_text('Solid Line')
 
     # reset the indicators part
-    clearAllEl = browser.find_element_by_css_selector(
+    clearAllEl = driver.find_element_by_css_selector(
         '#section4Long > .workbench a')
     clearAllEl.click()
-    browser.switch_to.alert.accept()
+    driver.switch_to.alert.accept()
 
     stock_logging.info('.....finish..')
 
 
 def main():
-    stockChartsRun(symbol='IQ')
+    driverTest = driverInit()
+    stockChartsRun(symbol='IQ', driver=driverTest, page_load_time=10)
 
 
 if __name__ == '__main__':

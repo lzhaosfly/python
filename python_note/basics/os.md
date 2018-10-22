@@ -2,14 +2,14 @@
 
 ## 0. if you want to check system version
 
-if you want to check system version, then please check `platform.version()`. 
+if you want to check system version, then please check `platform.system()`. 
 
 ```python
-if platform.version() == 'Windows':
+if platform.system() == 'Windows':
     chromeDriverPath = './chromedriver_win32.exe'
-elif platform.version() == 'Linux':
+elif platform.system() == 'Linux':
     chromeDriverPath = './chromedriver_linux'
-elif platform.version() == 'Darwin' :
+elif platform.system() == 'Darwin' :
     chromeDriverPath = './chromedriver_mac'
 ```
 

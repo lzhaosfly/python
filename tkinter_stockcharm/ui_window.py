@@ -3,8 +3,9 @@ import logging
 from tkinter import ttk
 from tkinter.scrolledtext import ScrolledText
 from tkinter import messagebox
-from selenium_stock_charm import stockChartsRun
+from selenium_stock_charm import stockChartsRun, driverInit
 from typing import Tuple, Dict
+from create_logging import TextAreaLoggerHandler
 
 
 def createAddWindow(listBox: tkinter.Listbox):
@@ -35,9 +36,10 @@ def showDeleteMsgBox(listBox: tkinter.Listbox):
         listBox.delete(listBox.curselection()[0], listBox.curselection()[-1])
 
 
-def run_selenium(symbols: Tuple[str], page_load_time, logging_level):
+def run_selenium(symbols: Tuple[str], page_load_time, logger):
+    driver = driverInit(logger)
     for symbol in symbols:
-        stockChartsRun(symbol, page_load_time, logging_level)
+        stockChartsRun(symbol, driver, page_load_time, logger)
 
 
 def main():
@@ -86,8 +88,16 @@ def main():
     loggerTextArea = ScrolledText(win, height=4, bg="#EDEDED")
     loggerTextArea.grid(row=8, columnspan=3, padx=20, pady=(0, 20))
 
+    # logger = create_logging(loggerComboBoxPairs.get(loggerLevelComboBox.get()))
+    logger = logging.getLogger('stock logger')
+    LOG_FORMAT = "%(asctime)s - %(levelname)s - %(message)s"
+    ch = TextAreaLoggerHandler(textArea=loggerTextArea)
+    ch.setLevel(loggerComboBoxPairs.get(loggerLevelComboBox.get()))
+    ch.setFormatter(LOG_FORMAT)
+    logger.addHandler(ch)
+
     startBtn = tkinter.Button(
-        text="Start run", command=lambda listBox=lisBox: run_selenium(listBoxVar.get(), page_load_time=int(spinBox.get()), logging_level=loggerComboBoxPairs.get(loggerLevelComboBox.get())))
+        text="Start run", command=lambda listBox=lisBox: run_selenium(listBoxVar.get(), page_load_time=int(spinBox.get()), logger=logger))
     startBtn.grid(row=5, column=2, sticky="W", padx=(0, 20))
 
     win.mainloop()
