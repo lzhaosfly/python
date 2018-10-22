@@ -53,3 +53,17 @@ l = [2, 2, 3, 4]
 
 product = reduce(lambda prev, elem : prev * elem, l, 1)
 ```
+
+## 6. capture local variable
+
+```python
+def createAddWindow(listBox: tkinter.Listbox):
+    pass
+
+lisBox = tkinter.Listbox(win, selectmode=tkinter.EXTENDED)
+lisBox.grid(row=1, columnspan=3, rowspan=4,
+            sticky='WE', padx=20, pady=(0, 20))
+
+addBtn = tkinter.Button(text="Add a symbol",
+                        command=lambda listBox=lisBox: createAddWindow(listBox=listBox))
+```

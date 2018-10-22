@@ -3,7 +3,7 @@
 ## 1. iterator
 
 ```python
-user = {"name": "lzhao", age: 18}
+user = {"name": "lzhao", "age": 18}
 
 for key in user.keys():
     print(key)

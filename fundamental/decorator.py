@@ -13,3 +13,11 @@ def be_polite(fn):
 @be_polite
 def greet():
     print("My name is Matt.")
+
+
+def main():
+    greet()
+
+
+if __name__ == '__main__':
+    main()

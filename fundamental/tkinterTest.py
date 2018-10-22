@@ -42,38 +42,40 @@ win.geometry(newGeometry="400x400+1500+30")
 # btn.pack()
 
 
-# # List box
-# listBoxVar = tkinter.Variable()
-# listBox = tkinter.Listbox(
-#     win, selectmode=tkinter.EXTENDED, listvariable=listBoxVar)
-# listBox.pack()
+# List box
+listBoxVar = tkinter.Variable()
+listBox = tkinter.Listbox(
+    win, selectmode=tkinter.EXTENDED, listvariable=listBoxVar)
+listBox.pack()
 
-# listBox.bind(
-#     '<Double-Button-1>', lambda event: print(listBox.get(listBox.curselection())))  # bind left moust button double click. 1 menas mouse left key
+listBox.bind(
+    '<Double-Button-1>', lambda event: print(listBox.get(listBox.curselection())))  # bind left moust button double click. 1 menas mouse left key
 
-# listBox.bind('<<ListboxSelect>>', lambda event: print(
-#     listBox.get(first=listBox.curselection()[0], last=listBox.curselection()[-1])))  # bind when select event
+listBox.bind('<<ListboxSelect>>', lambda event: print(
+    listBox.get(first=listBox.curselection()[0], last=listBox.curselection()[-1])))  # bind when select event
 
-# for item in ['awdw', 'eee', 'ccc', 'xxx']:
-#     listBox.insert(tkinter.END, item)  # append to list box
+for item in ['awdw', 'eee', 'ccc', 'xxx']:
+    listBox.insert(tkinter.END, item)  # append to list box
 
-# listBox.insert(tkinter.ACTIVE, 'in the head')  # insert to head
-# # listBox.delete(2)  # delete index 2 item
+listBox.insert(tkinter.ACTIVE, 'in the head')  # insert to head
+# listBox.delete(2)  # delete index 2 item
 
-# listBox.select_set(2, 4)  # will select index 2 item, can't be negative number
-# # listBox.select_clear(2)  # cancel index 2 to 5 selection state
+listBox.select_set(2, 4)  # will select index 2 item, can't be negative number
+# listBox.select_clear(2)  # cancel index 2 to 5 selection state
 
-# print(listBox.size())  # get size of list box. In this case, it's 5
-# print(listBox.get(2))  # get the index 2 item.
+print(listBox.size())  # get size of list box. In this case, it's 5
+print(listBox.get(2))  # get the index 2 item.
+# get the index 2 item.
+print(listBox.get(listBox.curselection()[0], listBox.curselection()[-1]))
 
-# # will get the current selection index tuple. It's index, not item!!
-# print(listBox.curselection())
+# will get the current selection index tuple. It's index, not item!!
+print(listBox.curselection())
 
-# # check if 2 was selected. In this case, true
-# print(listBox.select_includes(2))
+# check if 2 was selected. In this case, true
+print(listBox.select_includes(2))
 
-# print(listBoxVar.get())  # get all variable in list box
-# # listBoxVar.set(('1', '2', '3', '4'))  # set these varaible to list
+print(listBoxVar.get())  # get all variable in list box
+# listBoxVar.set(('1', '2', '3', '4'))  # set these varaible to list
 
 # # 创建一个菜单
 # menubar = tkinter.Menu(win)
@@ -181,32 +183,32 @@ win.geometry(newGeometry="400x400+1500+30")
 #         win, text=value[0], variable=value[1], command=update)
 #     checkBtn.pack()
 
-# grid layout
-tkinter.Label(win, text="Find:").grid(row=0, column=0, sticky='e')
-tkinter.Entry(win, width=60).grid(row=0, column=1,
-                                  padx=2, pady=20, sticky='we', columnspan=9)
-tkinter.Label(win, text="Replace:").grid(row=1, column=0, sticky='e')
-tkinter.Entry(win).grid(row=1, column=1, padx=2, pady=2, sticky='we',
-                        columnspan=9)
-tkinter.Button(win, text="Find").grid(
-    row=0, column=10, sticky='e' + 'w', padx=2, pady=2)
-tkinter.Button(win, text="Find All").grid(
-    row=1, column=10, sticky='e' + 'w', padx=2)
-tkinter.Button(win, text="Replace").grid(row=2, column=10, sticky='e' +
-                                         'w', padx=2)
-tkinter.Button(win, text="Replace All").grid(
-    row=3, column=10, sticky='e' + 'w', padx=2)
-tkinter.Checkbutton(win, text='Match whole word only').grid(
-    row=2, column=1, columnspan=4, sticky='w')
-tkinter.Checkbutton(win, text='Match Case').grid(
-    row=3, column=1, columnspan=4, sticky='w')
-tkinter.Checkbutton(win, text='Wrap around').grid(
-    row=4, column=1, columnspan=4, sticky='w')
-tkinter.Label(win, text="Direction:").grid(row=2, column=6, sticky='w')
-tkinter.Radiobutton(win, text='Up', value=1).grid(
-    row=3, column=6, columnspan=6, sticky='w')
-tkinter.Radiobutton(win, text='Down', value=2).grid(
-    row=3, column=7, columnspan=2, sticky='e')
+# # grid layout
+# tkinter.Label(win, text="Find:").grid(row=0, column=0, sticky='e')
+# tkinter.Entry(win, width=60).grid(row=0, column=1,
+#                                   padx=2, pady=20, sticky='we', columnspan=9)
+# tkinter.Label(win, text="Replace:").grid(row=1, column=0, sticky='e')
+# tkinter.Entry(win).grid(row=1, column=1, padx=2, pady=2, sticky='we',
+#                         columnspan=9)
+# tkinter.Button(win, text="Find").grid(
+#     row=0, column=10, sticky='e' + 'w', padx=2, pady=2)
+# tkinter.Button(win, text="Find All").grid(
+#     row=1, column=10, sticky='e' + 'w', padx=2)
+# tkinter.Button(win, text="Replace").grid(row=2, column=10, sticky='e' +
+#                                          'w', padx=2)
+# tkinter.Button(win, text="Replace All").grid(
+#     row=3, column=10, sticky='e' + 'w', padx=2)
+# tkinter.Checkbutton(win, text='Match whole word only').grid(
+#     row=2, column=1, columnspan=4, sticky='w')
+# tkinter.Checkbutton(win, text='Match Case').grid(
+#     row=3, column=1, columnspan=4, sticky='w')
+# tkinter.Checkbutton(win, text='Wrap around').grid(
+#     row=4, column=1, columnspan=4, sticky='w')
+# tkinter.Label(win, text="Direction:").grid(row=2, column=6, sticky='w')
+# tkinter.Radiobutton(win, text='Up', value=1).grid(
+#     row=3, column=6, columnspan=6, sticky='w')
+# tkinter.Radiobutton(win, text='Down', value=2).grid(
+#     row=3, column=7, columnspan=2, sticky='e')
 
 
 win.mainloop()

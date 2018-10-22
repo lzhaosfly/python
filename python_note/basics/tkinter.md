@@ -80,12 +80,13 @@ btn = tkinter.Button(win, text="spValue", command=lambda: print(sp.get()))
 btn.pack()
 ```
 
-## 7. list box
+## 7. list box (showing a list)
 
 ```python
-listBoxVar = tkinter.Variable() # only bind this when you want to set or get all the list box value
+# List box
+listBoxVar = tkinter.Variable()
 listBox = tkinter.Listbox(
-    win, selectmode=tkinter.EXTENDED, listvariable=listBoxVar) # There are also some other select mode, like tkinter.SINGLE or tkinter.BRWOSER
+    win, selectmode=tkinter.EXTENDED, listvariable=listBoxVar)
 listBox.pack()
 
 listBox.bind(
@@ -216,7 +217,7 @@ Note:
 -   Use global value to bind data with your child window data.
 
 
-## 10. combo box
+## 10. combo box (select input)
 
 ```python
 from tkinter import ttk
