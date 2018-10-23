@@ -1,5 +1,5 @@
 import platform
-import logging
+import os
 from create_logging import create_logging
 from selenium import webdriver
 from selenium.common.exceptions import TimeoutException
@@ -7,18 +7,21 @@ from selenium.webdriver.support.ui import Select
 
 
 def driverInit(driver_logging=create_logging()):
-    chromeDriverPath: str = './driver/chromedriver_unix'
+    chromeDriverPath: str = os.path.join(
+        os.path.dirname(__file__), 'driver', 'chromedriver_unix')
 
     if platform.system() == 'Windows':
-        chromeDriverPath = './driver/chromedriver_win32.exe'
+        chromeDriverPath = os.path.join(os.path.dirname(
+            __file__), 'driver', 'chromedriver_win32.exe')
     elif platform.system() == 'Linux':
-        chromeDriverPath = './driver/chromedriver_linux'
+        chromeDriverPath = os.path.join(os.path.dirname(
+            __file__), 'driver', 'chromedriver_linux')
 
     driver = webdriver.Chrome(executable_path=chromeDriverPath)
 
     initialUrl = 'https://www.google.com'
-
     try:
+        driver_logging.info("start...")
         driver.get(initialUrl)
     except TimeoutException:
         driver_logging.info(
@@ -41,6 +44,7 @@ def stockChartsRun(symbol: str, driver: webdriver, page_load_time: int = 10, sto
     submitButtonEl = driver.find_element_by_id('submitButton')
     try:
         submitButtonEl.click()
+        stock_logging.info(f'try to search {symbol} now...')
     except TimeoutException:
         stock_logging.info(
             'search page not finish load, but will try to continue...')
@@ -71,7 +75,7 @@ def stockChartsRun(symbol: str, driver: webdriver, page_load_time: int = 10, sto
     clearAllEl.click()
     driver.switch_to.alert.accept()
 
-    stock_logging.info('.....finish..')
+    stock_logging.info('finish..')
 
 
 def main():

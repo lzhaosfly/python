@@ -69,6 +69,7 @@ Note:
 
 -   If you want to have scroll bar for your text area. Then consider use `from tkinter.scrolledtext import ScrolledText`. ScrolledText has save initial value with Text.
 
+
 ## 6. spin box (like number input)
 
 ```python
@@ -295,3 +296,14 @@ tkinter.Radiobutton(win, text='Down', value=2).grid(
 
 This code will give this:
 ![layout](./assets/gridLayout.png)
+
+## 13. customize the window close event
+
+```python
+root.protocol('WM_DELETE_WINDOW', doSomething)  # root is your root window
+
+def doSomething():
+    # check if saving
+    # if not:
+    root.destroy()
+```

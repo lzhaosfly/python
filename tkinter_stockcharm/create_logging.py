@@ -17,7 +17,4 @@ class TextAreaLoggerHandler(logging.Handler):
         self.__textArea = textArea
 
     def emit(self, record):
-        print("***************")
-        print(record.getMessage())
-        super().emit(record)
         self.__textArea.insert(tkinter.INSERT, record.getMessage() + '\n')

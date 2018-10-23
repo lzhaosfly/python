@@ -54,8 +54,10 @@ listBox.bind(
 listBox.bind('<<ListboxSelect>>', lambda event: print(
     listBox.get(first=listBox.curselection()[0], last=listBox.curselection()[-1])))  # bind when select event
 
-for item in ['awdw', 'eee', 'ccc', 'xxx']:
-    listBox.insert(tkinter.END, item)  # append to list box
+# for item in ['awdw', 'eee', 'ccc', 'xxx']:
+#     listBox.insert(tkinter.END, item)  # append to list box
+
+listBoxVar.set(('awdw', 'eee', 'ccc', 'xxx'))
 
 listBox.insert(tkinter.ACTIVE, 'in the head')  # insert to head
 # listBox.delete(2)  # delete index 2 item
