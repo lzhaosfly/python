@@ -23,3 +23,7 @@ x.index(1) # 0
 x.index(5) # ValueError: tuple.index(x): x not in tuple
 x.index(3) # 2 - only the first matching index is returned
 ```
+
+Note:
+
+-   when you create a single element tuple. **Make sure you has a comma**. `(2,)`
