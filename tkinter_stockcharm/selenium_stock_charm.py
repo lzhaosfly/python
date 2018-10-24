@@ -2,6 +2,7 @@ import platform
 import os
 from create_logging import create_logging
 from selenium import webdriver
+from selenium.webdriver.remote.webelement import WebElement
 from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.support.ui import Select
 
@@ -32,12 +33,13 @@ def driverInit(driver_logging=create_logging()):
 
 def stockChartsRun(symbol: str, driver: webdriver, page_load_time: int = 10, stock_logging=create_logging()):
 
+    driver.implicitly_wait(page_load_time)
     driver.execute_script("window.open('https://stockcharts.com/h-sc/ui');")
     driver.switch_to.window(driver.window_handles[-1])
-    driver.implicitly_wait(page_load_time)
 
     # find symbol input
-    symbolInputEl = driver.find_element_by_id('symbol')
+    symbolInputEl: WebElement = driver.find_element_by_id('symbol')
+    symbolInputEl.clear()
     symbolInputEl.send_keys(symbol)
 
     # find button and click
