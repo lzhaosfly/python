@@ -11,7 +11,7 @@ and install.
 
 some useful command:
 
-*   create env: `conda create -n yourenvname python=3.6`
+*   create env: `conda create -n yourenvname python=3.7`
 *   clone env: `conda create --name myclone --clone myenv`
 *   active env: `source activate yourenvname`
 *   install package: `conda/pip install packages`
